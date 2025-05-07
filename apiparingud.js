@@ -102,12 +102,12 @@ async function handleFormSubmit(event) {
 
 async function listiraamatud() {
 
-    const responseData = await getDataAsJson("https://webapppractice12-daduf6h5hxfvhbfj.northeurope-01.azurewebsites.net/raamatud/");
+    const responseData = await getDataAsJson("https://red-wave-060fa6c03.6.azurestaticapps.net/raamatud/");
     const resultElement = document.getElementById("raamatud_result");
     resultElement.innerHTML = ""
     for (var raamat of responseData.raamatud) {
-        resultElement.innerHTML += '<a href="https://webapppractice12-daduf6h5hxfvhbfj.northeurope-01.azurewebsites.net/' + raamat + '"  download="' + raamat + '.txt" >' + raamat + "</a> " +
-            '<a href="#" onclick="deleteObject(\'https://webapppractice12-daduf6h5hxfvhbfj.northeurope-01.azurewebsites.net/raamatud/' + raamat + '\')" > [kustuta]</a>' +
+        resultElement.innerHTML += '<a href="https://red-wave-060fa6c03.6.azurestaticapps.net/' + raamat + '"  download="' + raamat + '.txt" >' + raamat + "</a> " +
+            '<a href="#" onclick="deleteObject(\'https://red-wave-060fa6c03.6.azurestaticapps.net/raamatud/' + raamat + '\')" > [kustuta]</a>' +
             "<br />";
     }
 }
