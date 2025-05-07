@@ -107,7 +107,7 @@ async function listiraamatud() {
     resultElement.innerHTML = ""
     for (var raamat of responseData.raamatud) {
         resultElement.innerHTML += '<a href="https://webapppractice12-daduf6h5hxfvhbfj.northeurope-01.azurewebsites.net/' + raamat + '"  download="' + raamat + '.txt" >' + raamat + "</a> " +
-            '<a href="#" onclick="deleteObject(\'webapppractice12-daduf6h5hxfvhbfj.northeurope-01.azurewebsites.net/raamatud/' + raamat + '\')" > [kustuta]</a>' +
+            '<a href="#" onclick="deleteObject(\'https://webapppractice12-daduf6h5hxfvhbfj.northeurope-01.azurewebsites.net/raamatud/' + raamat + '\')" > [kustuta]</a>' +
             "<br />";
     }
 }
